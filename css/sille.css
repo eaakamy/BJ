@@ -3,9 +3,14 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: voresfont;
+    src: url(../font-renner/renner-light.otf);
+}
 
-
-
+body {
+    font-family: voresfont;
+}
 
 
 
@@ -25,15 +30,18 @@
         width: 61%;
         display: block;
         margin: 0 auto;
-        margin-top: 4.3%;
+        margin-top: 5%; 
+        margin-bottom: 5%;
     }  
     
-    .info {
-        margin-left: 16%;
+    .info, .info1 {
+        margin-right: 6%;
+        margin-left: 8%;
+        width: 76%;
     }
     
-    .info1 {
-        margin-left: 16%;
+    .footer-item i {
+        font-size: 1.4em;
     }
     
     
@@ -52,6 +60,33 @@
         color: white;
         background-color: #5cb5df;
         padding: 0.4%;
+         border-left: 1px solid black;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+    }
+    
+    .somelink {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .footer-item {
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        padding-bottom: 1.4%;
+        padding-top: 1%;
+        
+    }
+
+    
+}
+
+
+/*tablets*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    footer {
+        margin: 0% 3% 0% 3%;
     }
     
     .somelink {
@@ -63,12 +98,78 @@
         color: grey;
     }
     
-}
+    .flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
 
+    }
 
-/*tablets*/
-@media (min-width: 768px) and (max-width: 1023px) {
+    .flex-container>* {
+    flex: 1 100%; 
     
+    }
+    
+    .footer-item {
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        padding-bottom: 1.4%;
+        padding-top: 1%;
+        
+    }
+    
+    .info, .info1 {
+        margin-left: 4%;
+        margin-right: 2%;
+    }
+    
+    
+    
+    
+    .kontaktinfo, .abningstider {
+        text-align: center;
+    }
+    
+    .footer-item i {
+        font-size: 1.4em;
+    }
+    
+    .some {
+        font-size: 2.4em;
+        text-align: center;
+        color: white;
+        background-color: #5cb5df;
+        padding: 0.4%;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+        
+    }
+    
+    
+    .rykkeind {
+        margin-left: 1.4%;
+        margin-top: -1%;
+    }
+    
+    #map {
+        height: 180px;
+        width: 84%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 14%;
+        
+    }
+    
+    .ugedage {
+        line-height: 28px;
+        text-align: center;
+    }
+    
+    /* FOOTER SLUT */ 
     
     
 }
@@ -116,13 +217,11 @@
         
     }
     
-    .info {
-        margin-left: 19%;
+    .info, .info1 {
+        margin-left:16%;
+        margin-right: 16%;
     }
     
-    .info1 {
-        margin-left: 19%;
-    }
     
     
     .kontaktinfo, .abningstider {
@@ -131,6 +230,8 @@
     
     .footer-item i {
         font-size: 1.4em;
+        text-align: inherit;
+        
     }
     
     .some {
