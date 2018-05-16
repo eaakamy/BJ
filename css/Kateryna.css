@@ -1,0 +1,251 @@
+/*GLOBAL*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+/* LOGO */
+
+.logo {
+    position: fixed;
+    z-index: 2;
+    padding: 1%;
+    margin-left: 4%;
+    margin-top: 0.2%;
+    background-color: transparent;
+}
+
+/* LOGO SLUT */
+
+/* MENU */
+
+nav {
+    position: absolute;
+    z-index: -1;
+    margin: 0;
+    padding: 2.8%;
+
+}
+.toggle,
+[id^=drop] {
+    display: none;
+}
+
+.indmeldelse {
+    background-color: #559f01;
+    color: white;
+    padding: 9px 20px;
+    line-height: 14px;
+    border-bottom: 0;
+}
+
+nav.scrolling {
+    transition: background-color 0.9s ease;
+    
+}
+
+header nav {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+}
+
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav ul {
+    margin-left: 30%;
+}
+
+nav ul li {
+    padding: 20px 55px;
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    color: #000000;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul li ul li:hover {
+    border-bottom: 1px solid black;
+}
+
+nav a:hover {
+    border-bottom: 1px solid black;
+}
+
+/* MENU SLUT*/
+
+/* HEADER */
+
+#home {
+    height: 100vh;
+    background-image: url(../images/forside2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+/* HEADER SLUT */
+
+/* HOME */
+#welcome{
+    position: absolute;
+    z-index: 1;
+    margin-top: 10%;
+    padding: 5%;
+    line-height: 1.5;
+    width: 40%;
+       background-color: #00000045;
+    color: white;
+ 
+}
+
+
+/* HOME SLUT */
+
+/* GALLERY */
+
+
+
+
+
+
+
+
+/*mobil*/
+
+@media (max-width: 767px) {
+     nav {
+        margin: 0;
+        z-index: 999;
+    }
+
+    /* Hide the navigation menu by default */
+    /* Also hide the  */
+    .toggle + a,
+    .menu {
+        display: none;
+    }
+
+    /* Stylinf the toggle lable */
+    .toggle {
+        display: block;
+float: right;
+        color: #FFF;
+        font-size: 17px;
+        text-decoration: none;
+        border: none;
+    }
+
+    .toggle:hover {
+        background-color: #0000005e;
+    }
+
+    /* Display Dropdown when clicked on Parent Lable */
+    [id^=drop]:checked + ul {
+        display: block;
+    }
+
+    nav {
+      
+    }
+
+    nav ul {
+        float: right;
+
+
+    }
+
+    /* Change menu item's width to 100% */
+    nav ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+    }
+
+    nav ul ul ul a {
+        padding: 0 80px;
+    }
+
+    nav a:hover,
+    nav ul ul ul a {
+     
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a,
+    nav ul ul ul a {
+        padding: 14px 20px;
+        color: #FFF;
+        font-size: 17px;
+    }
+
+
+    nav ul li ul li .toggle,
+    nav ul ul a {
+        background-color: #0000005e;
+    }
+
+    /* Hide Dropdowns by Default */
+    nav ul ul {
+        float: none;
+        position: static;
+        color: #ffffff;
+        /* has to be the same number as the "line-height" of "nav a" */
+    }
+
+    /* Hide menus on hover */
+    nav ul ul li:hover > ul,
+    nav ul li:hover > ul {
+        display: none;
+    }
+
+    /* Fisrt Tier Dropdown */
+    nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul ul li {
+        position: static;
+        /* has to be the same number as the "width" of "nav ul ul li" */
+    }
+
+    .item {
+        padding: 0;
+    }
+    */
+}
+
+
+/*tablet*/
+
+@media (min-width: 768px) and (max-width: 1023px) {}
+
+
+/*desktop*/
+
+@media (min-width: 1024px) {}
