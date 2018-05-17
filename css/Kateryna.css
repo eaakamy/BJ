@@ -20,8 +20,8 @@ body {
     position: fixed;
     z-index: 2;
     padding: 1%;
-    margin-left: 4%;
-    margin-top: 0.2%;
+    /*margin-left: 4%;
+    margin-top: 0.2%;*/
     background-color: transparent;
 }
 
@@ -29,16 +29,11 @@ body {
 
 /* MENU */
 
-nav {
-    position: absolute;
-    z-index: -1;
-    margin: 0;
-    padding: 2.8%;
-
-}
-.toggle,
-[id^=drop] {
-    display: none;
+header nav {
+    position: fixed;
+    width: 100%;
+    top: 40px;
+    z-index: 1;
 }
 
 .indmeldelse {
@@ -49,52 +44,79 @@ nav {
     border-bottom: 0;
 }
 
-nav.scrolling {
-    transition: background-color 0.9s ease;
-    
+.nav {
+    overflow: hidden;
+    z-index: 50;
+
 }
 
-header nav {
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    z-index: 1;
-}
-
-nav:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-nav ul {
-    margin-left: 30%;
-}
-
-nav ul li {
-    padding: 20px 55px;
-    display: inline-block;
-}
-
-nav a {
-    display: block;
-    color: #000000;
-    font-size: 1em;
-    text-decoration: none;
+.nav ul {
     text-transform: uppercase;
+    padding: 0;
+    margin: 0;
 }
 
-nav ul li ul li:hover {
+.sol-menu li {
+    float: left;
+    display: block;
+    list-style: none;
+}
+
+.sol-menu li a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    padding: 15px 50px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.indmeldelse {
+    background-color: #559f01;
+    padding: 9px 20px;
+    line-height: 14px;
+    border-bottom: 0;
+}
+
+.sol-menu a:hover {
     border-bottom: 1px solid black;
 }
 
-nav a:hover {
-    border-bottom: 1px solid black;
+ul.sag-menu {
+    float: right;
+    padding: 8px 10px;
+    overflow: hidden;
+}
+
+.sag-menu i {
+    color: #FFFFFF;
+    margin: 8px;
+    cursor: pointer;
+}
+
+input.search {
+    display: none;
+    padding: 5px;
+    max-width: 100%;
+}
+
+.altmenu-ac {
+    display: none;
+}
+
+.menu-ac {
+    display: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #FFFFFF;
 }
 
 /* MENU SLUT*/
 
-/* HEADER */
+/* HOME */
 
 #home {
     height: 100vh;
@@ -102,148 +124,248 @@ nav a:hover {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
- 
-}
-/* HEADER SLUT */
 
-/* HOME */
-#welcome{
+}
+
+#welcome {
     position: absolute;
     z-index: 1;
     margin-top: 10%;
     padding: 5%;
     line-height: 1.5;
-    width: 40%;
-       background-color: #00000045;
+    width: 43%;
+    background-color: #00000045;
     color: white;
- 
-}
 
+}
 
 /* HOME SLUT */
 
-/* GALLERY */
 
+/* GALLERY */ 
 
-
-
-
-
-
-
-/*mobil*/
-
-@media (max-width: 767px) {
-     nav {
-        margin: 0;
-        z-index: 999;
-    }
-
-    /* Hide the navigation menu by default */
-    /* Also hide the  */
-    .toggle + a,
-    .menu {
-        display: none;
-    }
-
-    /* Stylinf the toggle lable */
-    .toggle {
-        display: block;
-float: right;
-        color: #FFF;
-        font-size: 17px;
-        text-decoration: none;
-        border: none;
-    }
-
-    .toggle:hover {
-        background-color: #0000005e;
-    }
-
-    /* Display Dropdown when clicked on Parent Lable */
-    [id^=drop]:checked + ul {
-        display: block;
-    }
-
-    nav {
-      
-    }
-
-    nav ul {
-        float: right;
-
-
-    }
-
-    /* Change menu item's width to 100% */
-    nav ul li {
-        display: block;
-        width: 100%;
-    }
-
-    nav ul ul .toggle,
-    nav ul ul a {
-        padding: 0 40px;
-    }
-
-    nav ul ul ul a {
-        padding: 0 80px;
-    }
-
-    nav a:hover,
-    nav ul ul ul a {
-     
-    }
-
-    nav ul li ul li .toggle,
-    nav ul ul a,
-    nav ul ul ul a {
-        padding: 14px 20px;
-        color: #FFF;
-        font-size: 17px;
-    }
-
-
-    nav ul li ul li .toggle,
-    nav ul ul a {
-        background-color: #0000005e;
-    }
-
-    /* Hide Dropdowns by Default */
-    nav ul ul {
-        float: none;
-        position: static;
-        color: #ffffff;
-        /* has to be the same number as the "line-height" of "nav a" */
-    }
-
-    /* Hide menus on hover */
-    nav ul ul li:hover > ul,
-    nav ul li:hover > ul {
-        display: none;
-    }
-
-    /* Fisrt Tier Dropdown */
-    nav ul ul li {
-        display: block;
-        width: 100%;
-    }
-
-    nav ul ul ul li {
-        position: static;
-        /* has to be the same number as the "width" of "nav ul ul li" */
-    }
-
-    .item {
-        padding: 0;
-    }
-    */
+.galleri {
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: -3%;
 }
 
 
-/*tablet*/
+/* SLIDESHOW*/
+    .slider {
+        width: 80%;
+        margin: 100px auto;
+    }
 
-@media (min-width: 768px) and (max-width: 1023px) {}
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+/* ANMELDELSER */
+
+ .anmeldelser {
+     text-align: center;
+    margin-top: 8%;
+    margin-bottom: -3%;
+}
+
+/* MOBIL */
+
+@media (max-width: 767px) {
+
+    /* MENU */
+    header nav {
+        position: fixed;
+        width: 100%;
+        top: 13px;
+        z-index: 1;
+    }
+    .ac {
+        display: none;
+
+    }
+    .nav ul li {
+        float: none;
+    }
+    .menu-ac {
+        display: block;
+        float: right;
+    }
+
+    .sol-menu li a {
+        color: white;
+        background-color: #6b422f;
+    }
+
+    .ac {
+        margin-top: 60px;
+    }
+    .sol-menu li a:hover {
+        border-bottom: 1px solid white;
+    }
+
+    /*MENU SLUT*/
+    
+    /* LOGO */
+    .logo img {
+        width: 80%;
+    }
+
+    /*HOME*/
+    #welcome {
+        width: 100%;
+        margin-top: 15%;
+    }
+
+
+}
+
+
+/* TABLET */
+
+@media (min-width: 768px) {
+
+    .ac {
+        display: block!important;
+        float: right;
+    }
+    
+  
+    
+
+
+}
 
 
 /*desktop*/
