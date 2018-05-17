@@ -8,6 +8,7 @@
     <title>New Project</title>
     <link rel="stylesheet" type="text/css" href="css/sille.css">
 
+ 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
 
@@ -53,18 +54,17 @@
                     var map = new mapboxgl.Map({
                         container: 'map', // the container id
                         style: 'mapbox://styles/silletang/cjgxe74c6005z2rp5y15ubrxb', // your style
-                        center: [10.20165, 56.14765], // Aarhus (or somewhere else)
+                        center: [10.20165, 56.14765],
                         zoom: 16, // zoom
 
                     });
 
-                    /**
-                     * Marker, simple
-                     **/
+                    /** Marker, simple **/ 
                     var marker = new mapboxgl.Marker()
                         .setLngLat([10.20094, 56.14765])
                         .addTo(map);
-                    
+            
+            
 
                 </script>
 
