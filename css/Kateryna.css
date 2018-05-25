@@ -4,7 +4,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Century Gothic;
+}
+
+@font-face {
+    font-family: voresfont;
+    src: url(../font-renner/renner-light.otf);
+}
+
+body {
+    font-family: voresfont;
 }
 
 html,
@@ -14,296 +22,9 @@ body {
     padding: 0
 }
 
-/* LOGO */
-
-.logo {
-    position: fixed;
-    z-index: 2;
-    padding: 1%;
-    /*margin-left: 4%;
-    margin-top: 0.2%;*/
-    background-color: transparent;
-}
-
-/* LOGO SLUT */
-
-/* MENU */
-
-header nav {
-    position: fixed;
-    width: 100%;
-    top: 40px;
-    z-index: 1;
-}
-
-.indmeldelse {
-    background-color: #559f01;
-    color: white;
-    padding: 9px 20px;
-    line-height: 14px;
-    border-bottom: 0;
-}
-
-.nav {
-    overflow: hidden;
-    z-index: 50;
-
-}
-
-.nav ul {
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
-}
-
-.sol-menu li {
-    float: left;
-    display: block;
-    list-style: none;
-}
-
-.sol-menu li a {
-    display: block;
-    text-decoration: none;
-    color: #000000;
-    padding: 15px 50px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-
-.indmeldelse {
-    background-color: #559f01;
-    padding: 9px 20px;
-    line-height: 14px;
-    border-bottom: 0;
-}
-
-.sol-menu a:hover {
-    border-bottom: 1px solid black;
-}
-
-ul.sag-menu {
-    float: right;
-    padding: 8px 10px;
-    overflow: hidden;
-}
-
-.sag-menu i {
-    color: #FFFFFF;
-    margin: 8px;
-    cursor: pointer;
-}
-
-input.search {
-    display: none;
-    padding: 5px;
-    max-width: 100%;
-}
-
-.altmenu-ac {
-    display: none;
-}
-
-.menu-ac {
-    display: none;
-    padding: 10px;
-    cursor: pointer;
-    color: #FFFFFF;
-}
-
-/* MENU SLUT*/
-
-/* HOME */
-
-#home {
-    height: 100vh;
-    background-image: url(../images/forside2.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-#welcome {
-    position: absolute;
-    z-index: 1;
-    margin-top: 10%;
-    padding: 5%;
-    line-height: 1.5;
-    width: 43%;
-    background-color: #00000045;
-    color: white;
-
-}
-
-/* HOME SLUT */
-
-
-/* GALLERY */ 
-
-.galleri {
-    text-align: center;
-    margin-top: 4%;
-    margin-bottom: -3%;
-}
-
-
-/* SLIDESHOW*/
-    .slider {
-        width: 80%;
-        margin: 100px auto;
-    }
-
-    .slick-slide {
-      margin: 0px 20px;
-    }
-
-    .slick-slide img {
-      width: 100%;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-      color: black;
-    }
-
-
-/* Slider */
-.slick-slider
-{
-    position: relative;
-
-    display: block;
-    box-sizing: border-box;
-
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.slick-list
-{
-    position: relative;
-
-    display: block;
-    overflow: hidden;
-
-    margin: 0;
-    padding: 0;
-}
-.slick-list:focus
-{
-    outline: none;
-}
-.slick-list.dragging
-{
-    cursor: pointer;
-    cursor: hand;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list
-{
-    -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-}
-
-.slick-track
-{
-    position: relative;
-    top: 0;
-    left: 0;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.slick-track:before,
-.slick-track:after
-{
-    display: table;
-
-    content: '';
-}
-.slick-track:after
-{
-    clear: both;
-}
-.slick-loading .slick-track
-{
-    visibility: hidden;
-}
-
-.slick-slide
-{
-    display: none;
-    float: left;
-
-    height: 100%;
-    min-height: 1px;
-}
-[dir='rtl'] .slick-slide
-{
-    float: right;
-}
-.slick-slide img
-{
-    display: block;
-}
-.slick-slide.slick-loading img
-{
-    display: none;
-}
-.slick-slide.dragging img
-{
-    pointer-events: none;
-}
-.slick-initialized .slick-slide
-{
-    display: block;
-}
-.slick-loading .slick-slide
-{
-    visibility: hidden;
-}
-.slick-vertical .slick-slide
-{
-    display: block;
-
-    height: auto;
-
-    border: 1px solid transparent;
-}
-.slick-arrow.slick-hidden {
-    display: none;
-}
-
-
-/* ANMELDELSER */
-
- .anmeldelser {
-     text-align: center;
-    margin-top: 8%;
-    margin-bottom: -3%;
-}
-
 /* MOBIL */
 
 @media (max-width: 767px) {
-
     /* MENU */
     header nav {
         position: fixed;
@@ -313,7 +34,504 @@ input.search {
     }
     .ac {
         display: none;
+    }
+    .nav ul li {
+        float: none;
+    }
+    .nav ul {
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+    }
 
+    .menu-ac {
+        display: block;
+        float: right;
+        cursor: pointer;
+    }
+    .sol-menu li a {
+        color: white;
+        background-color: #6b422f;
+        display: block;
+        text-decoration: none;
+        padding: 15px 50px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+
+    .ac {
+        margin-top: 60px;
+    }
+    .sol-menu li a:hover {
+        border-bottom: 1px solid white;
+    }
+    /*MENU SLUT*/
+    /* LOGO */
+    .logo img {
+        width: 80%;
+        position: fixed;
+    }
+
+
+    /*HOME*/
+    #home {
+        height: 100vh;
+        width: 100%;
+        background-image: url(../images/forside2.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #welcome {
+        width: 80%;
+        position: absolute;
+        z-index: 1;
+        margin-top: 30%;
+        padding: 5%;
+        line-height: 1.5;
+        background-color: #00000045;
+        color: white;
+    }
+
+    .forside-pil {
+        width: 15%;
+        display: block;
+        margin: 0 auto;
+        margin-top: -40%;
+        margin-bottom: 20%;
+    }
+
+
+    /* SLIDESHOW*/
+    /* Slider */
+    .slick-slider {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -khtml-user-select: none;
+        -ms-touch-action: pan-y;
+        touch-action: pan-y;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .slick-list {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .slick-list:focus {
+        outline: none;
+    }
+
+    .slick-list.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+
+    .slick-slider .slick-track,
+    .slick-slider .slick-list {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .slick-track {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slick-track:before,
+    .slick-track:after {
+        display: table;
+        content: '';
+    }
+
+    .slick-track:after {
+        clear: both;
+    }
+
+    .slick-loading .slick-track {
+        visibility: hidden;
+    }
+
+    .slick-slide {
+        display: none;
+        float: left;
+        height: 100%;
+        min-height: 1px;
+    }
+
+    [dir='rtl'] .slick-slide {
+        float: right;
+    }
+
+    .slick-slide img {
+        display: block;
+    }
+
+    .slick-slide.slick-loading img {
+        display: none;
+    }
+
+    .slick-slide.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized .slick-slide {
+        display: block;
+    }
+
+    .slick-loading .slick-slide {
+        visibility: hidden;
+    }
+
+    .slick-vertical .slick-slide {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+
+    .slick-arrow.slick-hidden {
+        display: none;
+    }
+
+    .regular {
+        display: none;
+    }
+    .slick-prev:before {
+        display: none;
+    }
+    .slick-next:before {
+        display: none;
+    }
+
+    .b-anmeldelse {
+        border-radius: 50%;
+    }
+    .name {
+        text-align: center;
+        margin-top: 5%;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .review {
+        font-size: 18px;
+        margin-top: 3%;
+        line-height: 1.4;
+    }
+
+
+    .lazy {
+        display: none;
+    }
+
+
+    .slider {
+        width: 80%;
+        margin: 10%;
+    }
+
+    .slick-slide {
+        margin: 0px 20px;
+    }
+
+    .slick-slide img {
+        width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+
+    /*SLIDESHOW SLUT*/
+    /*HOME SLUT*/
+    #galleri {
+        text-align: center;
+        margin-bottom: 10%;
+        font-size: 1.6em;
+        margin-top: 34%
+    }
+
+    .anmeldelser {
+        text-align: center;
+        font-size: 1.6em;
+        margin-top: 25%;
+
+    }
+
+
+    /* FOOTER */
+    #map {
+        height: 200px;
+        width: 61%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .info,
+    .info1 {
+        margin-right: 6%;
+        margin-left: 8%;
+        width: 76%;
+    }
+
+    .footer-item i {
+        font-size: 1.4em;
+    }
+
+
+    .kontaktinfo,
+    .abningstider {
+        text-align: center;
+    }
+
+    .ugedage {
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .some {
+        font-size: 2.4em;
+        text-align: center;
+        color: white;
+        background-color: #5cb5df;
+        padding: 0.4%;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    .somelink {
+        text-decoration: none;
+        color: white;
+    }
+
+    .footer-item {
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        padding-bottom: 1.4%;
+        padding-top: 1%;
+    }
+    /* FOOTER SLUT */
+    /* OM OS */
+    #om-os {
+        height: 100vh;
+        width: 100%;
+        background-image: url(../images/om.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #vision {
+        width: 80%;
+        position: absolute;
+        z-index: 1;
+        margin-top: 30%;
+        padding: 5%;
+        line-height: 1.5;
+        background-color: #00000045;
+        color: white;
+        font-style: italic;
+    }
+
+    #opersonale {
+        text-align: center;
+        font-size: 1.6em;
+        margin-top: 30%;
+    }
+
+    table {
+        margin: 0 5% 0 5%;
+    }
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th,
+    td {
+        padding: 5px;
+    }
+    .farve {
+        background-color: rgba(121, 156, 42, 0.4);
+    }
+    .blaa {
+        background-color: rgba(92, 181, 223, 0.1);
+    }
+    #table {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20%;
+    }
+
+    .narvar img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .kontaktinfo {
+        margin-top: 2%;
+    }
+    .narvartekst {
+        text-align: center;
+        margin-bottom: 12%;
+    }
+
+
+    /* OM OS SIDE SLUT */
+    /*PRAKTISK SIDE */
+    #praktisk-billede {
+        height: 100vh;
+        width: 100%;
+        background-image: url(../images/baggrund-praktisk.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #praktisk-tabel {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 40%;
+        margin-bottom: 20%;
+    }
+
+    .praktisk-tre {
+        padding: 10%;
+        border: 1px solid #799c2a;
+    }
+
+    .kontaktinfo,
+    .kontaktinfo1 {
+        text-align: center;
+    }
+
+    input[type=button] {
+        margin: 0 auto;
+        display: block;
+        width: 50%;
+        padding: 6px;
+        text-transform: uppercase;
+        background-color: #799c2a;
+        color: white;
+        border: 1px solid #799c2a;
+        margin-top: 4%;
+        font-size: 0.90em;
+    }
+
+    span {
+        border-radius: 3em;
+        margin-left: 95%;
+        background: #cc3131;
+        color: #fff;
+        font-size: 1.25em;
+        padding: .4em .7em;
+        cursor: pointer;
+    }
+
+    /* PRAKTISK SIDE SLUT */
+    /* INDMELDELSE SIDE */
+    #indmeldelse-billede {
+        height: 100vh;
+        width: 100%;
+        background-image: url(../images/baggrund-indmeldelse.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .contact-container {
+        margin-top: 30%;
+        margin-bottom: 20%;
+    }
+    /*bokse man kan skrive i */
+    input[type=text],
+    textarea {
+        width: 80%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin: 1% 10% 3% 10%;
+        resize: vertical;
+    }
+    #comment {
+        height: 150px;
+    }
+    /*INDMELDER KNAP */
+    input[type=submit] {
+        background-color: #559f01;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 1% 10% 0.4% 10%;
+        width: 80%;
+        font-size: 1em;
+        font-family: voresfont;
+        text-transform: uppercase;
+    }
+
+    /* STYLING AF TEKST*/
+    .contacttext {
+        text-align: left;
+        margin: 0 10% 0 10%;
+    }
+    #registration {
+        text-align: center;
+        margin-bottom: 4%;
+        margin-top: 10%;
+    }
+    /* INDMELDELSE SIDE SLUT */
+}
+
+
+/* TABLET */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /* MENU */
+    header nav {
+        position: fixed;
+        width: 100%;
+        top: 13px;
+        z-index: 1;
+    }
+
+    .logo {
+        position: fixed;
+    }
+    .sol-menu {
+        display: none;
     }
     .nav ul li {
         float: none;
@@ -322,52 +540,1183 @@ input.search {
         display: block;
         float: right;
     }
-
     .sol-menu li a {
         color: white;
         background-color: #6b422f;
     }
-
     .ac {
         margin-top: 60px;
     }
     .sol-menu li a:hover {
         border-bottom: 1px solid white;
     }
-
     /*MENU SLUT*/
-    
-    /* LOGO */
-    .logo img {
-        width: 80%;
+    /* FORSIDE */
+    .forside-pil {
+        width: 10%;
+        display: block;
+        margin: 0 auto;
+        margin-top: -20%;
+        margin-bottom: 20%;
     }
 
-    /*HOME*/
+    #home {
+        height: 100vh;
+        background-image: url(../images/forside2.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     #welcome {
-        width: 100%;
-        margin-top: 15%;
+        position: absolute;
+        z-index: 1;
+        margin-top: 17%;
+        padding: 5%;
+        line-height: 1.5;
+        width: 43%;
+        background-color: #00000045;
+        color: white;
+    }
+
+    /* GALLERY */
+    #galleri {
+        font-size: 1.6em;
+        text-align: center;
+        margin-top: 4%;
+        margin-bottom: -3%;
+    }
+
+    /* SLIDESHOW*/
+    /* Slider */
+    .slick-slider {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -khtml-user-select: none;
+        -ms-touch-action: pan-y;
+        touch-action: pan-y;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .slick-list {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .slick-list:focus {
+        outline: none;
+    }
+
+    .slick-list.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+
+    .slick-slider .slick-track,
+    .slick-slider .slick-list {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .slick-track {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slick-track:before,
+    .slick-track:after {
+        display: table;
+        content: '';
+    }
+
+    .slick-track:after {
+        clear: both;
+    }
+
+    .slick-loading .slick-track {
+        visibility: hidden;
+    }
+
+    .slick-slide {
+        display: none;
+        float: left;
+        height: 100%;
+        min-height: 1px;
+    }
+
+    [dir='rtl'] .slick-slide {
+        float: right;
+    }
+
+    .slick-slide img {
+        display: block;
+    }
+
+    .slick-slide.slick-loading img {
+        display: none;
+    }
+
+    .slick-slide.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized .slick-slide {
+        display: block;
+    }
+
+    .slick-loading .slick-slide {
+        visibility: hidden;
+    }
+
+    .slick-vertical .slick-slide {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+
+    .slick-arrow.slick-hidden {
+        display: none;
+    }
+
+    .regular {
+        display: none;
+    }
+
+    .slick-prev:before {
+        display: none;
+    }
+    .slick-next:before {
+        display: none;
+    }
+
+    .b-anmeldelse {
+        border-radius: 50%;
     }
 
 
-}
+    .name {
+        text-align: center;
+        margin-top: 5%;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .review {
+        font-size: 18px;
+        margin-top: 3%;
+        line-height: 1.4;
+    }
+
+    .lazy {
+        display: none;
+    }
+
+    .anmeldelser {
+        text-align: center;
+        margin-top: 16%;
+        font-size: 1.6em;
+    }
 
 
-/* TABLET */
 
-@media (min-width: 768px) {
+    .slider {
+        width: 80%;
+        margin: 10%;
+    }
 
+    .slick-slide {
+        margin: 0px 20px;
+    }
+
+    .slick-slide img {
+        width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+
+    /* SLIDESHOW SLUT*/
+    /* FORSIDE SLUT */
+    /* INDMELDELSE SIDE */
+    #indmeldelse-billede {
+        height: 100vh;
+        background-image: url(../images/baggrund-indmeldelse.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+    .contact-container {
+        margin-top: 8%;
+        margin-bottom: 15%;
+    }
+    /*BOKS MED TEKST MAN KAN SKRIVE I*/
+    input[type=text],
+    textarea {
+        width: 40%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin: 1% 30% 2% 30%;
+        resize: vertical;
+
+    }
+    #comment {
+        height: 150px;
+    }
+
+    /*INDMELDER KNAP */
+    input[type=submit] {
+        background-color: #559f01;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 1% 30% 0.4% 30%;
+        width: 40%;
+        text-transform: uppercase;
+        font-family: voresfont;
+        font-size: 1em;
+    }
+
+    /* STYLING AF TEKST*/
+    .contacttext {
+        text-align: left;
+        margin: 0 30% -0.8% 30%;
+    }
+    #registration {
+        text-align: center;
+        margin-bottom: 4%;
+    }
+
+
+    /* INDMELDELSE SIDE SLUT */
+    /* OM OS SIDE */
+    #om-os {
+        height: 100vh;
+        background-image: url(../images/om.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #vision {
+        position: absolute;
+        z-index: 1;
+        margin-top: 17%;
+        padding: 5%;
+        line-height: 1.5;
+        width: 43%;
+        background-color: #00000045;
+        color: white;
+        font-style: italic;
+    }
+
+    #opersonale {
+        text-align: center;
+        font-size: 1.6em;
+    }
+
+    .regular {
+        display: none;
+    }
+
+
+
+    .ptekst {
+        text-align: center;
+        font-size: 1.6em;
+        margin-top: 2%;
+    }
+
+    .ptekst1 {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    #table {
+        width: 40%;
+        margin: 0 auto;
+        display: block;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .narvar {
+        margin-top: 12%;
+
+    }
+
+    .narvar img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .narvar p {
+        text-align: center;
+        font-size: 1.1em;
+        margin-top: 2%;
+    }
+
+    /* OM OS SIDE SLUT */
+    /* PRAKTISK SIDE */
+    #praktisk-billede {
+        height: 100vh;
+        background-image: url(../images/baggrund-praktisk.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #praktisk-tabel {
+        width: 40%;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 10%;
+    }
+
+    .praktisk-tre {
+        padding: 20%;
+        text-align: center;
+        border: 1px solid #799c2a;
+    }
+
+    input[type=button] {
+        width: 50%;
+        margin: auto;
+        padding: 6px;
+        text-transform: uppercase;
+        background-color: #799c2a;
+        color: white;
+        border: 1px solid #799c2a;
+        margin-top: 4%;
+        font-size: 0.90em;
+    }
+
+
+    /* PRAKTISK SIDE SLUT */
+    /* FOOTER */
     .ac {
         display: block!important;
         float: right;
     }
-    
-  
-    
 
 
+    footer {
+        margin: 0% 3% 0% 3%;
+    }
+
+    .somelink {
+        text-decoration: none;
+        color: white;
+    }
+
+    .somelink:hover {
+        color: grey;
+    }
+
+    .flex-container {
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-around;
+
+    }
+
+    .flex-container > * {
+        flex: 1 100%;
+
+    }
+
+    .footer-item {
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        padding-bottom: 1.4%;
+        padding-top: 1%;
+
+    }
+
+    .info,
+    .info1 {
+        margin-left: 4%;
+        margin-right: 2%;
+    }
+
+    .kontaktinfo,
+    .abningstider {
+        text-align: center;
+    }
+
+    .footer-item i {
+        font-size: 1.4em;
+    }
+
+    .some {
+        font-size: 2.4em;
+        text-align: center;
+        color: white;
+        background-color: #5cb5df;
+        padding: 0.4%;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+
+    }
+
+    #map {
+        height: 180px;
+        width: 84%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 14%;
+
+    }
+
+    .ugedage {
+        line-height: 28px;
+        text-align: center;
+    }
+
+    table {
+        margin: 0 20% 0 20%;
+    }
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th,
+    td {
+        padding: 15px;
+    }
+    .farve {
+        background-color: rgba(121, 156, 42, 0.4);
+    }
+    .blaa {
+        background-color: rgba(92, 181, 223, 0.1);
+    }
+    /* FOOTER SLUT */
 }
 
 
 /*desktop*/
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+
+    /* LOGO */
+    .logo {
+        /*position: fixed;*/
+        position: absolute;
+        z-index: 2;
+        padding: 1%;
+        /*margin-left: 4%;
+    margin-top: 0.2%;*/
+        background-color: transparent;
+
+    }
+
+    /* LOGO SLUT */
+    /* MENU */
+    header nav {
+        /*position: fixed;*/
+        position: absolute;
+        width: 100%;
+        top: 40px;
+        z-index: 1;
+    }
+
+    .indmeldelse {
+        background-color: #559f01;
+        color: white;
+        padding: 9px 20px;
+        line-height: 14px;
+        border-bottom: 0;
+    }
+
+    .ac {
+        float: right;
+    }
+
+
+    .nav {
+        overflow: hidden;
+        z-index: 50;
+    }
+
+    .nav ul {
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sol-menu li {
+        float: left;
+        display: block;
+        list-style: none;
+        padding: 15px 50px;
+    }
+
+    .active {
+        border-bottom: 1px solid black;
+    }
+
+    .sol-menu li a {
+        /*display: block;*/
+        text-decoration: none;
+        color: #000000;
+
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    .sol-menu a:hover {
+        border-bottom: 1px solid black;
+    }
+
+    ul.sag-menu {
+        float: right;
+        padding: 8px 10px;
+        overflow: hidden;
+    }
+
+    .sag-menu i {
+        color: #FFFFFF;
+        margin: 8px;
+        cursor: pointer;
+    }
+
+    input.search {
+        display: none;
+        padding: 5px;
+        max-width: 100%;
+    }
+
+    .altmenu-ac {
+        display: none;
+    }
+
+    .menu-ac {
+        display: none;
+        padding: 10px;
+        cursor: pointer;
+        color: #FFFFFF;
+    }
+
+    nav.scrolling {
+        transition: background-color 0.9s ease;
+        top: 40px;
+    }
+
+
+    /* MENU SLUT*/
+    /* HOME */
+    #home {
+        height: 100vh;
+        background-image: url(../images/forside2.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #welcome {
+        position: absolute;
+        z-index: 1;
+        margin-top: 17%;
+        padding: 5%;
+        line-height: 1.5;
+        width: 43%;
+        background-color: #00000045;
+        color: white;
+    }
+
+    #welcome h1,
+    #vision h1 {
+        font-family: voresfont;
+        /*font-size: 1.6em;*/
+    }
+
+    #welcome h4,
+    #vision h1 {
+        font-size: 1.1em;
+    }
+
+    .forside-pil {
+        width: 5%;
+        height: 67px;
+        margin: 0 auto;
+        display: block;
+        margin-top: -7%;
+        margin-bottom: 10%;
+    }
+
+    .forside-pil:hover {
+        color: rgb(224, 217, 209);
+        opacity: 0.70;
+    }
+
+    /* HOME SLUT */
+    /* GALLERY */
+    #galleri {
+        text-align: center;
+        margin-top: 4%;
+        margin-bottom: -3%;
+    }
+
+
+    /* SLIDESHOW*/
+    .slider {
+        width: 80%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+        margin: 0px 20px;
+    }
+
+    .slick-slide img {
+        width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+
+
+
+    /* Slider */
+    .slick-slider {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -khtml-user-select: none;
+        -ms-touch-action: pan-y;
+        touch-action: pan-y;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .slick-list {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10%;
+    }
+
+    .slick-list:focus {
+        outline: none;
+    }
+
+    .slick-list.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+
+    .slick-slider .slick-track,
+    .slick-slider .slick-list {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .slick-track {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slick-track:before,
+    .slick-track:after {
+        display: table;
+        content: '';
+    }
+
+    .slick-track:after {
+        clear: both;
+    }
+
+    .slick-loading .slick-track {
+        visibility: hidden;
+    }
+
+    .slick-slide {
+        display: none;
+        float: left;
+        height: 100%;
+        min-height: 1px;
+    }
+
+    [dir='rtl'] .slick-slide {
+        float: right;
+    }
+
+    .slick-slide img {
+        display: block;
+    }
+
+    .slick-slide.slick-loading img {
+        display: none;
+    }
+
+    .slick-slide.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized .slick-slide {
+        display: block;
+    }
+
+    .slick-loading .slick-slide {
+        visibility: hidden;
+    }
+
+    .slick-vertical .slick-slide {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+
+    .slick-arrow.slick-hidden {
+        display: none;
+    }
+
+
+    /* ANMELDELSER */
+    .anmeldelser {
+        text-align: center;
+        margin-top: 8%;
+        margin-bottom: -5%;
+        font-size: 1.5em;
+    }
+
+
+    /*OM OS*/
+    #om-os {
+        height: 100vh;
+        background-image: url(../images/om.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    /* PERSONALE */
+    #opersonale {
+        font-size: 1.5em;
+        text-align: center;
+        margin-top: 4%;
+        margin-bottom: -5%;
+    }
+
+    .personale {
+        border-radius: 50%;
+    }
+
+    .ptekst {
+        text-align: center;
+        margin-top: 5%;
+        font-size: 18px;
+    }
+
+    .ptekst1 {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 1%
+    }
+
+    #vision {
+        position: absolute;
+        z-index: 1;
+        margin-top: 17%;
+        padding: 5%;
+        line-height: 1.5;
+        width: 43%;
+        background-color: #00000045;
+        color: white;
+        font-style: italic;
+    }
+
+    #table {
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10%;
+    }
+
+    #table* {
+        flex: 1 100%;
+    }
+
+    .narvar {
+        padding-bottom: 1.4%;
+        padding-top: 1%;
+        width: 33.3%;
+    }
+
+    .narvar img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 4%;
+    }
+
+    .narvartekst {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 4%;
+        line-height: 1.5;
+        margin-bottom: 15%;
+    }
+
+
+    /* PRAKTISK SIDE */
+    #praktisk-billede {
+        height: 100vh;
+        background-image: url(../images/praktisk.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    /* INDMELDELSE SIDE */
+    #indmeldelse-billede {
+        height: 100vh;
+        background-image: url(../images/baggrund-indmeldelse.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+    .regular1 {
+        display: none;
+    }
+    .lazy1 {
+        display: none;
+    }
+
+
+    /* FOOTER */
+    .somelink {
+        text-decoration: none;
+        color: white;
+    }
+
+    .somelink:hover {
+        color: grey;
+    }
+
+    .flex-container {
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-around;
+    }
+
+    .flex-container > * {
+        flex: 1 100%;
+    }
+
+    .footer-item {
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        padding-bottom: 1.4%;
+        padding-top: 1%;
+    }
+
+    .info,
+    .info1 {
+        margin-left: 16%;
+        margin-right: 16%;
+    }
+
+    .kontaktinfo,
+    .abningstider {
+        text-align: center;
+    }
+
+    .footer-item i {
+        font-size: 1.4em;
+        text-align: inherit;
+            color: #559f06;
+    }
+
+    .some {
+        font-size: 2.4em;
+        text-align: center;
+        color: white;
+        background-color: #5cb5df;
+        padding: 0.4%;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    #map {
+        height: 200px;
+        width: 61%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 4.3%;
+    }
+
+    .ugedage {
+        line-height: 28px;
+        text-align: center;
+    }
+
+    /* FOOTER SLUT */
+    /* PRAKTISK SIDE */
+    table {
+        margin: 0 auto;
+
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th,
+    td {
+        padding: 15px;
+    }
+    .farve {
+        background-color: rgba(121, 156, 42, 0.4);
+    }
+    .blaa {
+        background-color: rgba(92, 181, 223, 0.1);
+    }
+    #praktisk-tabel {
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-around;
+        margin: 0 auto;
+        margin: 10% 3% 0 3%;
+
+    }
+
+    #praktisk-tabel* {
+        flex: 1 100%;
+    }
+
+    .praktisk-tre {
+        padding-bottom: 1.4%;
+        padding: 10%;
+        width: 33.3%;
+        border: 1px solid #799c2a;
+        margin-bottom: 10%;
+    }
+    /* BUTTON */
+    form {
+        text-align: center;
+    }
+    input[type=button] {
+        width: 60%;
+        padding: 6px;
+        text-transform: uppercase;
+        background-color: #799c2a;
+        color: white;
+        border: 1px solid #799c2a;
+        margin-top: 4%;
+        font-size: 0.77em;
+    }
+    .kontaktinfo1 {
+        text-align: center;
+        margin-top: -17%;
+    }
+
+    /*Pop up effect fra: https://codepen.io/DominicFrancois/pen/vlJbf*/
+    .pop-up-button {
+
+        cursor: pointer;
+    }
+
+    .pop-up {
+        width: 50%;
+        background: #fff;
+        /* position: absolute;*/
+        z-index: 1;
+        border-radius: 1opx;
+
+        margin: 0 auto
+    }
+
+    .pop-up-container {
+        height: 30%;
+        width: 100%;
+        opacity: .5;
+        position: relative;
+        z-index: -1;
+
+    }
+
+    #top,
+    #logo {
+        margin-top: 20px;
+    }
+
+    span {
+        border-radius: 3em;
+        margin-left: 95%;
+        background: #cc3131;
+        color: #fff;
+        font-size: 1.25em;
+        padding: .4em .7em;
+        cursor: pointer;
+    }
+
+    .pop-up-text {
+        box-sizing: border-box;
+        padding: 2%;
+    }
+
+    .pop-up-text h1 {
+        font-weight: 100;
+        color: #212121;
+        text-align: center;
+    }
+
+    .pop-up-text p {
+        font-size: 22px;
+        margin-bottom: 1em;
+        text-align: left;
+    }
+
+    .pricetext {
+        margin: 0;
+        padding: 0;
+    }
+
+    .pop-up-text a {
+        color: #000000;
+        margin-bottom: 10px;
+        font-family: century gothic;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .pop-up-text img {
+        max-height: 250px;
+
+        text-align: center;
+        /* margin-bottom: 10px;*/
+    }
+
+    .icons-flex-container {
+        box-shadow: 0 0 20px #0000004a;
+        padding: 1%;
+    }
+
+    #mad h1 {
+        font-size: 20px;
+    }
+
+    #mad p {
+        line-height: 1.5;
+    }
+
+    .kids {
+        margin: 8%;
+    }
+
+    /* PRAKTISK SIDE SLUT */
+    /* INDMELDELSE SIDE */
+    /*BOKS MAN KAN SKRIVE I*/
+    input[type=text],
+    textarea {
+        width: 30%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin: 1% 35% 1% 35%;
+        resize: vertical;
+
+    }
+    #comment {
+        height: 150px;
+    }
+    /*INDMELDER KNAP */
+    input[type=submit] {
+        background-color: #559f01;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 1% 35% 0.4% 35%;
+        width: 30%;
+        font-size: 1.3em;
+        font-family: voresfont;
+        text-transform: uppercase;
+    }
+
+    input[type=submit]:hover {
+        background-color: #559f019c;
+    }
+    /* STYLING AF TEKST*/
+    .contacttext {
+        text-align: left;
+        margin: 0 35% -0.8% 35%;
+    }
+    #registration {
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 2%;
+    }
+
+
+
+
+    /* INDMELDELSE SIDE SLUT */
+}
